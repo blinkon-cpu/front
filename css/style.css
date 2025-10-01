@@ -47,15 +47,13 @@ a:focus {
 }
 .main-container {
   display: flex;
-  gap: 2rem; /* espaçamento entre colunas */
+  gap: 2rem;
 }
-
-/* Conteúdo principal ocupa mais espaço */
 .main-container main {
   flex: 3;
 }
 
-/* Aside ocupa menos espaço */
+
 .main-container aside {
   flex: 1;
 }
@@ -73,7 +71,6 @@ a:focus {
   font-weight: 400;
  } 
 
-/* Navegação - Mobile padrão */
 .nav ul {
   list-style: none; 
   margin: 1rem 0 0 0; 
@@ -184,18 +181,23 @@ blockquote {
   border-left: 0.1875rem solid var(--cor-destaque); 
   font-style: italic; 
 }
-
-/* ======================
-   RESPONSIVIDADE
-   ====================== */
-
-/* Tablets */
+.skip-link {
+  position: absolute;
+  top: -50px; /* Oculta o link para fora da tela */
+  left: 0;
+  background-color: #007bff; /* Cor de fundo, se desejar */
+  color: white;
+  padding: 10px;
+  z-index: 1000; /* Garante que ele fique acima de outros elementos */
+  transition: top 0.3s ease-in-out; /* Efeito suave de aparecer/desaparecer */
+}
+.skip-link:focus {
+  top: 0; /* Posição visível quando focado */
+}
 @media (min-width: 481px) {
   h2 { font-size: 1.8rem; }
   .nav a { padding: 0.75rem; }
 }
-
-/* Telas médias (tablets maiores e pequenos desktops) */
 @media (min-width: 768px) {
   .main-container {
     flex-direction: column;
@@ -207,8 +209,6 @@ blockquote {
   h1 { font-size: 2.5rem; }
   h2 { font-size: 2rem; }
 }
-
-/* Telas grandes (desktop) */
 @media (min-width: 1024px) {
   .nav ul { justify-content: center; }
 }
