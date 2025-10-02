@@ -40,3 +40,8 @@ SILVA, Maurício Samy. Construindo sites com CSS e (X)HTML: sites controlados po
 
 TEIXEIRA, Fabricio. Introdução e boas práticas em UX Design.
 
+
+
+
+https://docs.google.com/presentation/d/1RK-GSuouxd37Nwok5H206csNkhjyB0hi8c67DNitqRw/edit?slide=id.p1#slide=id.p1
+
